@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyMap</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/demo1.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<!-- JavaScript includes -->
+		<script src="js/ipresenter.packed.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#ipresenter').iPresenter({
+					timerPadding: -1,
+					controlNav: true,
+					controlNavThumbs: true,
+					controlNavNextPrev: false
+				});
+			});
+		</script>
+	    <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+</script>		
+
+<script type="text/javascript">
+ function jumpMap1()
+ {
+	$("#mapfrm").attr("src","map1/map1.html" );
+ }
+
+ function jumpMap2()
+ {
+	$("#mapfrm").attr("src","map2/map2.html" );
+ }
+
+function jumpMap3()
+ {
+	$("#mapfrm").attr("src","map3/map3.html" );
+ }
+
+function jumpMap4()
+ {
+	$("#mapfrm").attr("src","map4/map4.html" );
+ }
+
+</script>
+
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="user-desc">
+	</div>
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="top-menu">
+				  <span class="menu"> </span>
+					<ul class="cl-effect-15">
+						<li><a class="active" href="index.html">HOME</a></li>
+						<li><a href="#" onclick="jumpMap1()" data-hover="map 1">map 1</a></li>
+						<li><a href="#" onclick="jumpMap2()" data-hover="map 2">map 2</a></li>
+						<li><a href="#" onclick="jumpMap3()" data-hover="map 3">map 3</a></li>
+						<li><a href="#" onclick="jumpMap4()" data-hover="map 4">map 4</a></li>
+					</ul>
+				</div>
+				 <!--script-nav-->
+				<script>
+				$("span.menu").click(function(){
+				$(".top-menu ul").slideToggle("slow" , function(){
+				});
+				});
+				</script>
+				<!--script-nav-->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="slider">
+				<iframe id="mapfrm" width="100%" height="100%" src="map1/map1.html" frameborder="0" allowfullscreen></iframe>
+			
+			<div id="ipresenter">
+				aaakkdjkjdkjkdjdkjfkdjfkjdkfjdkf
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32024393-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- header-section-ends -->
+<!-- content-section-starts -->
+	<!-- footer-section-ends -->
+
+	
+
+</body>
+</html>
