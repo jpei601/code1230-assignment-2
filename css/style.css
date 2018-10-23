@@ -1,10 +1,9 @@
-body{
-	padding:0;
-	margin:0;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-	background:url('../images/bg.jpg') no-repeat;
-	background-size:cover;
-}
+html, body{
+	font-family: 'Roboto', sans-serif;
+	 font-size: 100%;
+	 background-color: #FFF;
+ }
+ 
 body a{
     transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -77,9 +76,18 @@ i.cart{
 	color:#fff;
 	padding:0 8px;
 }
-.header {
+
+
+.header{
 	background: #35c3d9;
+	padding:0;
+	border-bottom:1px ;
+	position:fixed;
+	margin-top: 0;
+	z-index: 999999;
+	width:100%;
 }
+
 .logo {
 	float: left;
 }
